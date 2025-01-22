@@ -1,0 +1,333 @@
+/* Heading for the upload section */
+h4 {
+  text-align: left;
+  font-family: "Inconsolata Regular";
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 180px;
+  display: block;
+}
+
+/* Style for smaller text like tips and info */
+small {
+  font-family: "Inconsolata Regular";
+  font-weight: lighter;
+  font-size: smaller;
+  color: #ccc;
+  padding: 5px;
+}
+
+/* Style for <span> elements */
+span {
+  color: lightgray;
+  font-family: "Inconsolata Regular";
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+/* Define custom fonts */
+@font-face {
+  font-family: "Inconsolata ExtraBold";
+  src: url("fonts/static/Inconsolata-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inconsolata Bold";
+  src: url("fonts/static/Inconsolata-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inconsolata Regular";
+  src: url("fonts/static/Inconsolata-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inconsolata Medium";
+  src: url("fonts/static/Inconsolata-Medium.ttf") format("truetype");
+}
+
+/* Centered div for user input and buttons */
+.centered-div {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+  background-color: transparent;
+  padding: 40px;
+}
+
+/* Title text style */
+.centered-text {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 45px;
+  font-family: "Inconsolata ExtraBold";
+}
+
+/* Description text style */
+.para-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+  color: lightgrey;
+  font-weight: lighter;
+  font-size: 20px;
+  font-family: "Inconsolata Regular";
+}
+
+/* Error messages */
+.err-1 {
+  display: block;
+  color: red;
+  text-align: left;
+}
+
+/* Upload box style */
+.upload-box {
+  width: 500px;
+  height: 120px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+/* Upload icon style */
+.upl {
+  display: block;
+  margin-top: 10px;
+  height: 56px;
+  width: 56px;
+}
+
+/* Upload label and span styles */
+.upload-box label {
+  cursor: pointer;
+  padding: 10px;
+  display: block; /* Make sure the label is on its own line */
+  margin-top: 5px;
+}
+
+.upload-box label span {
+  margin-top: 20px;
+}
+
+/* Hide the file input element */
+.upload-box input[type="file"] {
+  display: none; /* Hide the file input */
+}
+
+/* Change text color after file is selected */
+.upload-box input[type="file"]:valid + label span {
+  color: ghostwhite; /* Change text color after a file is selected (optional) */
+}
+
+/* Error message for file upload */
+.upl-err {
+  display: block;
+  text-align: left;
+  color: red;
+}
+
+/* Info section layout */
+.info {
+  display: flex;
+  margin-bottom: 8%;
+}
+
+.icon-info {
+  padding: 5px;
+}
+
+/* Label for input fields */
+.label-3 {
+  color: #fff;
+  font-family: "Inconsolata Regular";
+  font-size: large;
+  margin-bottom: 6px;
+  display: block;
+  text-align: left;
+}
+
+/* Input fields with background color */
+.bg-colored {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 12px;
+  width: 100%;
+  border-radius: 9px;
+  color: #fff;
+}
+
+/* Container for input fields */
+.grey-container {
+  margin-bottom: 20px;
+}
+
+/* Submit button styling */
+.sub-btn {
+  width: 100%;
+  display: block;
+  background-color: coral;
+  font-family: "Inconsolata Regular";
+  font-size: large;
+  font-weight: bold;
+  color: midnightblue;
+  padding: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Hover effect for submit button */
+.sub-btn:hover {
+  background-color: #ff3b30;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Background container styles */
+.background-cover {
+  position: relative;
+  height: 1300px;
+  overflow: hidden;
+  /* background-image: url(./images/background-desktop.png); */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1300px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Logo positioning */
+.logo-full {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 5%;
+}
+
+/* Pattern images */
+.pattern-lines {
+  position: absolute;
+  z-index: 1;
+}
+
+.pattern-squiggly-line-top {
+  position: absolute;
+  top: 7%;
+  right: 0;
+  z-index: 2;
+}
+
+.pattern-circle {
+  position: absolute;
+  bottom: 40%;
+  right: 17%;
+  z-index: 1;
+}
+
+.pattern-squiggly-line-bottom {
+  position: absolute;
+  bottom: 0;
+  left: -3%;
+  z-index: 1;
+  transform: rotate(-15deg);
+  width: 1000px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  span {
+    color: lightgray;
+    font-family: "Inconsolata Regular";
+    font-weight: lighter;
+    font-size: small;
+  }
+
+  small {
+    font-family: "Inconsolata Regular";
+    font-weight: lighter;
+    font-size: x-small;
+    color: #ccc;
+    padding: 5px;
+  }
+
+  .centered-div {
+    padding: 20px;
+  }
+
+  /* Adjust title font size for smaller screens */
+  .centered-text {
+    font-size: 30px;
+  }
+
+  /* Adjust paragraph text for smaller screens */
+  .para-text {
+    font-size: 16px;
+  }
+
+  /* Input fields with background color */
+  .bg-colored {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 12px;
+    width: 90%;
+    border-radius: 9px;
+    color: #fff;
+  }
+
+  .upload-box {
+    width: 295px;
+    height: 120px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  /* Adjust pattern lines for smaller screens */
+  .pattern-squiggly-line-top {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    z-index: 2;
+    width: 200px;
+  }
+
+  .pattern-squiggly-line-bottom {
+    position: absolute;
+    bottom: 0;
+    left: -3%;
+    z-index: 1;
+    transform: rotate(-15deg);
+    width: 500px;
+  }
+}

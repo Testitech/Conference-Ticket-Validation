@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>user-auth.html</title>
+    <!-- Favicon for the website -->
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <!-- Link to the main stylesheet (CSS) -->
+    <link rel="stylesheet" href="my.css" />
+    <!-- Links to custom fonts -->
+    <link
+      rel="stylesheet"
+      href="fonts/Inconsolata-VariableFont_wdth,wght.ttf"
+    />
+    <link rel="stylesheet" href="fonts/static/Inconsolata-Bold.ttf" />
+    <link rel="stylesheet" href="fonts/static/Inconsolata-ExtraBold.ttf" />
+    <link rel="stylesheet" href="fonts/static/Inconsolata-Regular.ttf" />
+    <link rel="stylesheet" href="fonts/static/Inconsolata-Medium.ttf" />
+    <!-- Link to the JavaScript file for validation -->
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <!-- Section for the title and main content -->
+    <section id="title">
+      <main>
+        <!-- Background and logo images for the page -->
+        <div class="background-cover">
+          <!-- Background image of the page -->
+          <img
+            class="background-image"
+            src="./images/background-desktop.png"
+            alt="Background Image"
+          />
+          <!-- Logo image centered on the page -->
+          <img
+            class="logo-full"
+            src="./images/logo-full.svg"
+            alt="Conference Logo"
+          />
+          <!-- Decorative pattern images -->
+          <img
+            class="pattern-lines"
+            src="./images/pattern-lines.svg"
+            alt="Pattern Lines"
+          />
+          <img
+            class="pattern-squiggly-line-top"
+            src="./images/pattern-squiggly-line-top.svg"
+            alt="Squiggly Line Top"
+          />
+          <img
+            class="pattern-circle"
+            src="./images/pattern-circle.svg"
+            alt="Pattern Circle"
+          />
+          <img
+            class="pattern-squiggly-line-bottom"
+            src="./images/pattern-squiggly-line-bottom.svg"
+            alt="Squiggly Line Bottom"
+          />
+          <!-- Heading with text -->
+          <h1 class="centered-text">
+            Your journey to Coding Conf 2025 starts here!
+          </h1>
+          <!-- Paragraph with additional instructions -->
+          <p class="para-text">
+            Secure your spot at next year's biggest Coding Conference.
+          </p>
+        </div>
+
+        <!-- Form section for user input (avatar upload and personal details) -->
+        <div class="centered-div">
+          <!-- Subtitle for uploading an avatar -->
+          <h4>Upload Avatar</h4>
+          <!-- Form for submitting user data -->
+          <form onsubmit="return validate()" action="validated.html">
+            <!-- File upload box for user avatar -->
+            <div class="upload-box">
+              <input type="file" id="image-upload" accept="image/*" />
+              <!-- Upload icon for the avatar -->
+              <img
+                class="upl"
+                src="./images/icon-upload.svg"
+                alt="Upload Icon"
+                draggable="true"
+              />
+              <!-- Label for the file input -->
+              <label for="image-upload"
+                ><span>Drag and Drop or Click to upload</span></label
+              >
+            </div>
+            <!-- Information section about the file upload -->
+            <div class="info">
+              <img
+                class="icon-info"
+                src="./images/icon-info.svg"
+                alt="Info Icon"
+              />
+              <!-- Small text providing instructions for the file -->
+              <small>Upload your photo (JPG or PNG, max size: 500KB)</small>
+              <small class="upl-err" id="img-err"></small>
+            </div>
+            <!-- Input for full name -->
+            <div class="grey-container">
+              <label class="label-3" for="full-name">Full Name</label>
+              <input
+                class="bg-colored"
+                type="text"
+                id="full-name"
+                name="full-name"
+              />
+              <small class="err-1" id="name-error"></small>
+            </div>
+            <!-- Input for email address -->
+            <div class="grey-container">
+              <label class="label-3" for="email">Email Address</label>
+              <input
+                class="bg-colored"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+              />
+              <small class="err-1" id="email-error"></small>
+            </div>
+            <!-- Input for GitHub username -->
+            <div class="grey-container">
+              <label class="label-3" for="github-username"
+                >Github Username</label
+              >
+              <input
+                class="bg-colored"
+                type="text"
+                id="github-username"
+                name="github-username"
+                placeholder="@yourusername"
+              />
+              <small class="err-1" id="username-error"></small>
+            </div>
+            <!-- Submit button for the form -->
+            <button class="sub-btn" type="submit">Generate my Ticket</button>
+          </form>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

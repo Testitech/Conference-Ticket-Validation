@@ -1,0 +1,404 @@
+/* General styling for h3 element */
+h3 {
+  font-family: "Inconsolata Regular"; /* Font for h3 */
+  font-weight: lighter; /* Light font weight */
+  color: ghostwhite; /* Text color */
+  z-index: 5; /* Layer above other elements */
+}
+
+/* Font-face declarations for Inconsolata font families */
+@font-face {
+  font-family: "Inconsolata ExtraBold";
+  src: url("fonts/static/Inconsolata-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inconsolata Bold";
+  src: url("fonts/static/Inconsolata-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inconsolata Regular";
+  src: url("fonts/static/Inconsolata-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inconsolata Medium";
+  src: url("fonts/static/Inconsolata-Medium.ttf") format("truetype");
+}
+
+/* Styling for centered text element */
+.centered-text {
+  position: absolute; /* Position relative to the container */
+  top: 10%; /* 10% from the top */
+  left: 22%; /* 22% from the left */
+  text-align: center; /* Center-align text */
+  z-index: 5; /* Layer above other elements */
+  color: #fff; /* White text color */
+  font-weight: bolder; /* Bolder text */
+  font-size: 60px; /* Large font size */
+  font-family: "Inconsolata ExtraBold"; /* Bold font family */
+}
+
+/* Gradient text style for gradient-txt1 */
+.gradient-txt1 {
+  font-family: "Inconsolata ExtraBold"; /* Bold font for gradient text */
+  font-size: 60px; /* Large font size */
+  background: linear-gradient(to right, coral, snow); /* Gradient background */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Transparent text to show background */
+  font-weight: bolder; /* Bolder font */
+  text-align: center; /* Center the text */
+  z-index: 5; /* Layer above other elements */
+}
+
+/* Gradient text style for gradient-txt2 (same as gradient-txt1) */
+.gradient-txt2 {
+  font-family: "Inconsolata ExtraBold";
+  font-size: 60px;
+  background: linear-gradient(to right, coral, snow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  text-align: center;
+  z-index: 5;
+}
+
+/* Styling for paragraph text */
+.para-text {
+  position: absolute; /* Positioned absolutely within the container */
+  font-family: "Inconsolata ExtraBold"; /* Bold font */
+  font-size: 60px; /* Large font size */
+  text-align: center; /* Center the text */
+  color: #fff; /* White color for text */
+  top: 15%; /* 15% from the top */
+  left: 30%; /* 30% from the left */
+  z-index: 5; /* Layer above other elements */
+}
+
+/* Additional paragraph styling (pt-2) */
+.pt-2 {
+  font-family: "Inconsolata ExtraBold"; /* Bold font */
+  font-size: 60px; /* Large font size */
+  text-align: center; /* Center the text */
+  color: #fff; /* White text color */
+  top: 15%; /* 15% from the top */
+  left: 30%; /* 30% from the left */
+  z-index: 5; /* Layer above other elements */
+}
+
+/* Styling for email message text */
+.email-message {
+  position: absolute;
+  font-family: "Inconsolata Regular"; /* Regular font for email text */
+  font-size: 24px; /* Smaller font size */
+  font-weight: lighter; /* Lighter font weight */
+  text-align: center; /* Center-align the text */
+  color: lightslategray; /* Gray text color */
+  top: 25%; /* 25% from the top */
+  left: 35%; /* 35% from the left */
+  z-index: 5; /* Layer above other elements */
+}
+
+/* Color for specific text elements */
+.colored-txt {
+  color: coral; /* Coral text color */
+}
+
+/* Styling for the ticket div */
+.ticket-div {
+  position: absolute;
+  top: 41%; /* 41% from the top */
+  left: 30%; /* 30% from the left */
+  z-index: 5; /* Layer above other elements */
+}
+
+/* Styling for the pattern ticket image */
+.pattern-ticket {
+  top: 50%; /* 50% from the top */
+  left: 30%; /* 30% from the left */
+  z-index: 5; /* Layer above other elements */
+  height: 400px; /* Set height for the ticket image */
+  width: 600px; /* Set width for the ticket image */
+}
+
+/* Date styling within the ticket */
+.date {
+  position: absolute; /* Positioned absolutely within the container */
+  font-family: "Inconsolata Regular"; /* Regular font */
+  font-weight: lighter; /* Lighter weight for the date */
+  color: ghostwhite; /* White text color */
+  top: 100px; /* 100px from the top */
+  left: 37px; /* 37px from the left */
+  z-index: 5; /* Layer above other elements */
+}
+
+/* Testimony (avatar) image styling */
+.Testimony {
+  position: absolute;
+  border-radius: 10px; /* Rounded corners for the avatar */
+  top: 220px; /* 220px from the top */
+  left: 32px; /* 32px from the left */
+  height: 90px; /* Set height for avatar */
+  width: 90px; /* Set width for avatar */
+}
+
+/* Name styling for attendee */
+.name {
+  position: absolute;
+  top: 225px; /* 225px from the top */
+  left: 140px; /* 140px from the left */
+  font-weight: lighter; /* Lighter font weight */
+  color: ghostwhite; /* White text color */
+  font-family: "Inconsolata Regular"; /* Regular font */
+  z-index: 5; /* Layer above other elements */
+}
+
+/* Flexbox styling for user ID */
+.flexed-div {
+  position: absolute;
+  display: flex; /* Use flexbox for layout */
+  top: 65%; /* 65% from the top */
+  left: 140px; /* 140px from the left */
+}
+
+/* User ID with rotation */
+.num {
+  position: absolute;
+  transform: rotate(90deg); /* Rotate text 90 degrees */
+  font-family: "Inconsolata Regular"; /* Regular font */
+  font-size: larger; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  color: slategray; /* Slate gray color */
+  left: 375px; /* 375px from the left */
+  top: -90px; /* -90px from the top */
+}
+
+/* Background cover styling */
+.background-cover {
+  position: relative; /* Relative positioning for the background */
+  height: 1300px; /* Set the height of the background */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Background image styling */
+.background-image {
+  position: absolute; /* Absolute position */
+  top: 0; /* 0px from the top */
+  left: 0; /* 0px from the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-size: cover; /* Cover the background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the background */
+  height: 1300px; /* Set height */
+  overflow: hidden; /* Prevent overflow */
+  z-index: 0; /* Layer below other elements */
+}
+
+/* Styling for the full logo */
+.logo-full {
+  position: absolute;
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the logo */
+  top: 5%; /* 5% from the top */
+}
+
+/* Smaller logo styling */
+.logo-full-2 {
+  position: absolute;
+  top: 75px; /* 75px from the top */
+  left: 32px; /* 32px from the left */
+  z-index: 5; /* Layer above other elements */
+}
+
+/* Styling for pattern lines */
+.pattern-lines {
+  position: absolute;
+  z-index: 1; /* Layer below other elements */
+}
+
+.pattern-squiggly-line-top {
+  position: absolute;
+  top: 7%; /* 7% from the top */
+  right: 0; /* Align to the right */
+  z-index: 2; /* Layer above other elements */
+}
+
+.pattern-circle {
+  position: absolute;
+  bottom: 40%; /* 40% from the bottom */
+  right: 17%; /* 17% from the right */
+  z-index: 1; /* Layer below other elements */
+}
+
+.pattern-squiggly-line-bottom {
+  position: absolute;
+  bottom: 0; /* Align to the bottom */
+  left: -3%; /* 3% from the left */
+  z-index: 1; /* Layer below other elements */
+  transform: rotate(-15deg); /* Rotate the line */
+  width: 1000px; /* Set the width */
+}
+
+/* Mobile-specific adjustments (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Adjustments for h3 on mobile */
+  h3 {
+    font-size: small;
+    font-family: "Inconsolata Regular"; /* Use regular font */
+    font-weight: lighter;
+    color: ghostwhite;
+    z-index: 5;
+  }
+
+  /* Adjustments for centered text on mobile */
+  .centered-text {
+    font-size: 38px; /* Slightly larger font */
+    top: 8%; /* Adjusted placement */
+    padding: 0 10px;
+    left: 10px;
+  }
+
+  /* Gradient text1 */
+  .gradient-txt1 {
+    font-size: 38px; /* Increased font size */
+  }
+
+  /* Gradient text2 */
+  .gradient-txt2 {
+    font-size: 38px;
+    top: 22%; /* Moved up */
+  }
+
+  /* Paragraph text */
+  .para-text {
+    font-size: 35px; /* Adjusted font size */
+    top: 18%; /* Moved up */
+    left: 35px;
+  }
+
+  /* pt-2 text */
+  .pt-2 {
+    font-size: 35px; /* Adjusted font size */
+    top: 24%; /* Moved up */
+    left: 35px;
+  }
+
+  /* Email message */
+  .email-message {
+    font-size: 16px; /* Adjusted font size */
+    top: 25%; /* Moved up */
+    padding: 0 10px;
+    left: 40px;
+  }
+
+  /* Ensure elements are not too far apart */
+  .centered-text,
+  .gradient-txt1,
+  .gradient-txt2,
+  .para-text,
+  .pt-2,
+  .email-message {
+    line-height: 1.3;
+  }
+  /* Adjustments for ticket div on mobile */
+  .ticket-div {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 5;
+  }
+
+  /* Adjustments for the second logo on mobile */
+  .logo-full-2 {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    z-index: 5;
+    height: 90px;
+    width: 200px;
+  }
+
+  /* Adjustments for pattern ticket image on mobile */
+  .pattern-ticket {
+    top: 50%;
+    left: 30%;
+    z-index: 5;
+    height: 200px;
+    width: 400px;
+  }
+
+  /* Adjustments for date styling on mobile */
+  .date {
+    position: absolute;
+    font-size: small;
+    font-family: "Inconsolata Regular";
+    font-weight: lighter;
+    color: ghostwhite;
+    top: 53px;
+    left: 70px;
+    z-index: 5;
+  }
+
+  /* Adjustments for Testimony (avatar) on mobile */
+  .Testimony {
+    position: absolute;
+    border-radius: 10px;
+    top: 120px;
+    left: 22px;
+    height: 60px;
+    width: 60px;
+  }
+
+  /* Adjustments for name on mobile */
+  .name {
+    position: absolute;
+    font-size: large;
+    top: 110px;
+    left: 90px;
+    font-weight: lighter;
+    color: ghostwhite;
+    font-family: "Inconsolata Regular";
+    z-index: 5;
+  }
+
+  /* Adjustments for flexed div on mobile */
+  .flexed-div {
+    position: absolute;
+    display: flex;
+    top: 65%;
+    left: 90px;
+  }
+
+  /* Adjustments for num (user ID) on mobile */
+  .num {
+    position: absolute;
+    transform: rotate(90deg);
+    font-family: "Inconsolata Regular";
+    font-size: larger;
+    font-weight: bold;
+    color: slategray;
+    left: 250px;
+    top: -70px;
+    z-index: 5;
+  }
+
+  /* Adjustments for pattern squiggly lines on mobile */
+  .pattern-squiggly-line-top {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    z-index: 2;
+    width: 200px;
+  }
+
+  .pattern-squiggly-line-bottom {
+    position: absolute;
+    bottom: 0;
+    left: -4%;
+    z-index: 1;
+    transform: rotate(-15deg);
+    width: 500px;
+  }
+}
